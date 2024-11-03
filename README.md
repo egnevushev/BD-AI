@@ -12,13 +12,17 @@ Tools for AI experiments which can count tokens (the same as [openai Tokenizer](
 
 #### Count tokens
 
-Run `bd-ai tokens -f <filepath>` to get amount of tokens as a console output. 
+Run `bd-ai tokens -f <filepath>` to get amount of tokens as a console output.
+
+Example: `bd-ai tokens -f .\example1.xml`. Output: `4386`
 
 You can also specify model (default is `gpt-4o`). See full help running: `bd-ai tokens --help`.
 
 #### Convert files [WIP]
 
 Run `bd-ai convert -f <xml_filepath>` to convert an `XML` file to `YAML`. 
+
+Example: `bd-ai convert -f .\example1.xml`. Output: `Yaml OK: example1.xml.yaml`
 
 You can also specify an `output path` and `extension`. See full help running: `bd-ai tokens --help`.
 

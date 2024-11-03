@@ -25,6 +25,7 @@ public class Application
                 var content = await File.ReadAllTextAsync(opts.File);
                 var root = XMLReader.ReadFromString(content);
                 DataFormats.SaveToFile(output, root);
+                Console.WriteLine($"{opts.Extension} OK: {output}");
             }, errs =>
             {
                 Console.WriteLine("Error parsing arguments: " + string.Join(", ", errs));
